@@ -9,26 +9,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <style>
-html, body {
+  html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-color: #000; /* optional dark background */
+    background-color: #000;
   }
 
-  body > div, #story_container, #story_content, iframe {
+  body, div, iframe {
     margin: 0 !important;
     padding: 0 !important;
     border: none !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    max-width: 100vw !important;
-    max-height: 100vh !important;
-    position: absolute;
+  }
+
+  #story_container, #story_content, iframe {
+    position: fixed;
     top: 0;
     left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw;
+    max-height: 100vh;
+    box-sizing: border-box;
   }
 
   iframe {
