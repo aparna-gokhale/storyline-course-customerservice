@@ -13,14 +13,26 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     overflow: hidden;
-    background-color: #000; /* optional for dark background */
+    background-color: #000; /* optional dark background */
   }
 
-  iframe, #story_container, #story_content {
-    width: 100vw;
-    height: 100vh;
-    border: none;
+  body > div, #story_container, #story_content, iframe {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  iframe {
+    display: block;
   }
   </style>
 
