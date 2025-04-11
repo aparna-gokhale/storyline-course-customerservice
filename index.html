@@ -9,8 +9,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <style>
-    html, body { height: 100%; padding: 0; margin: 0 }
-    #app { height: 100%; width: 100%; }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000; /* optional for dark background */
+  }
+
+  iframe, #story_container, #story_content {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  }
   </style>
 
   <script>
